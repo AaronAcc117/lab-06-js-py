@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <script>
+        const milesDrivenInput = prompt("Enter the number of miles driven:");
+        const milesDriven = Number(milesDrivenInput);
+        const gallonsUsedInput = prompt("Enter the Number of gallons of gas used");
+        const gallonsUsed = Number(gallonsUsedInput);
+
+       if(!Number.isNaN(milesDriven) && !Number.isNaN(gallonsUsed) && gallonsUsed !== 0 && milesDriven !== "" && gallonsUsed !== "") {
+        const mpg = milesDriven / gallonsUsed;
+        console.log("Miles per gallon (MPG):) " + mpg); 
+       } else {
+        console.log("Please enter numbers for miles driven and gallons used");
+       }
+    </script>
+</body>
+</html>
